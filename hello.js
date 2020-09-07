@@ -11,7 +11,7 @@ const server = http.createServer(
             res.writeHead(200, { 'Content-Type': 'text/html' }); 
             
             // set response content    
-            res.write(`Node Hello on ${os.hostname()} ${cnt++} \n`);
+            res.write(`Node Bonjour on ${os.hostname()} -- ${cnt++} \n`);
             res.end();
         
         }
